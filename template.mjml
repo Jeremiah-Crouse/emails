@@ -1,0 +1,113 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-family="Arial, Helvetica, sans-serif" />
+      <mj-button background-color="#4A90D9" color="#ffffff" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#f4f4f4">
+    <mj-section background-color="#ffffff" padding="40px 20px 20px">
+      <mj-column>
+        <mj-text font-size="28px" font-weight="bold" align="center" color="#333333">
+          Family Update
+        </mj-text>
+        <mj-text font-size="16px" align="center" color="#666666" padding-top="10px">
+          Easter 2026
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text font-size="16px" line-height="24px" color="#333333">
+          Hello Family!
+        </mj-text>
+        <mj-text font-size="16px" line-height="24px" color="#333333" padding-top="15px">
+          I hope this message finds you well! It's been a while since I've sent an update, so I wanted to fill you all in on what's happening in my life.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        <mj-divider border-color="#e0e0e0" border-width="1px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text font-size="18px" font-weight="bold" color="#4A90D9">
+          Living Situation
+        </mj-text>
+        <mj-text font-size="16px" line-height="24px" color="#333333" padding-top="10px">
+          I am currently staying at a homeless shelter in San Antonio. It's been a challenging season, but I'm grateful for the stability it provides while I work toward my goals.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        <mj-divider border-color="#e0e0e0" border-width="1px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text font-size="18px" font-weight="bold" color="#4A90D9">
+          Easter Weekend
+        </mj-text>
+        <mj-text font-size="16px" line-height="24px" color="#333333" padding-top="10px">
+          I am so excited that Lauren and the kids are coming to visit me this Easter weekend! It means the world to me to be able to spend this time with family.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 20px">
+      <mj-column>
+        <mj-divider border-color="#e0e0e0" border-width="1px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text font-size="18px" font-weight="bold" color="#4A90D9">
+          What's Ahead
+        </mj-text>
+        <mj-text font-size="16px" line-height="24px" color="#333333" padding-top="10px">
+          Lauren and I are planning to move the family to Cleveland, TX by the end of this year, hopefully sooner if all goes well. This is contingent on us purchasing a home and getting my probation transferred over.
+        </mj-text>
+        <mj-text font-size="16px" line-height="24px" color="#333333" padding-top="15px">
+          Lauren will be taking a job at International Leadership School in Cleveland. As for me, I'm working on transferring my education from Maestro to WGU, and I'm hoping to soon thereafter land an internship in software engineering.
+        </mj-text>
+        <mj-text font-size="16px" line-height="24px" color="#333333" padding-top="15px">
+          Healthwise, I am doing well!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-divider border-color="#e0e0e0" border-width="1px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="30px 20px">
+      <mj-column>
+        <mj-text font-size="16px" align="center" color="#666666">
+          That's all for now! I love you all and appreciate your continued support and prayers.
+        </mj-text>
+        <mj-text font-size="16px" font-weight="bold" align="center" color="#333333" padding-top="20px">
+          - Jeremiah
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px">
+      <mj-column>
+        <mj-text font-size="12px" align="center" color="#999999">
+          © 2026 Jeremiah Crouse
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

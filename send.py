@@ -1,4 +1,5 @@
 import os
+import sys
 import requests
 import resend
 from dotenv import load_dotenv
@@ -26,12 +27,12 @@ def compile_mjml(mjml_content):
     else:
         raise Exception(f"MJML Error: {response.text}")
 
-def send_email(html_body):
+def send_email(html_body, recipients):
     """Sends the compiled HTML via Resend."""
     params = {
         "from": "Jeremiah <theking@crousia.com>",
-        "to": ["johnjcrouse@gmail.com", "pamcrouse@gmail.com", "hiddengold@gmail.com", "greatlyloved@gmail.com", "laurenacrouse@gmail.com", "jeremiahjcrouse@gmail.com"], # Update this or pull from a file
-        "subject": "Friends & Family Update",
+        "to": recipients,
+        "subject": "Family Update - Easter 2026" if not test_mode else "Test Email",
         "html": html_body,
     }
     
@@ -42,7 +43,14 @@ def send_email(html_body):
         print(f"❌ Resend Error: {e}")
 
 if __name__ == "__main__":
-    # 1. Read the MJML file authored by Big Pickle
+    test_mode = len(sys.argv) > 1 and sys.argv[1] == "test"
+    recipients = ["jeremiahjcrouse@gmail.com"] if test_mode else ["johnjcrouse@gmail.com", "pamcrouse@gmail.com", "hiddengold@gmail.com", "greatlyloved@gmail.com", "laurenacrouse@gmail.com", "jeremiahjcrouse@gmail.com"]
+
+    if test_mode:
+        print("Test mode: sending to jeremiahjcrouse@gmail.com only")
+    else:
+        print("Sending to full family list")
+
     if not os.path.exists("template.mjml"):
         print("Error: template.mjml not found. Let Big Pickle write it first!")
     else:
@@ -53,4 +61,4 @@ if __name__ == "__main__":
         compiled_html = compile_mjml(mjml_source)
         
         print("Sending via Resend...")
-        send_email(compiled_html)
+        send_email(compiled_html, recipients)
