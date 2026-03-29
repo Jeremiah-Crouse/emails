@@ -39,17 +39,26 @@ def compile_mjml(mjml_content):
 def send_batch(html_body, recipients):
     batch_params = []
     for person in recipients:
+        # Clean up any accidental whitespace from the text file
+        name = person['name'].strip()
+        email = person['email'].strip()
+        
+        # Format explicitly as "Name <email@example.com>"
+        formatted_to = f"{name} <{email}>"
+        
         batch_params.append({
             "from": "Jeremiah <theking@crousia.com>",
-            "to": person["email"],
-            "subject": f"Hey {person['name']}, a quick life update",
+            "to": formatted_to,
+            "subject": f"Hey {name}, a quick life update",
             "html": html_body,
         })
 
     try:
+        # Pass the list of dictionaries to Resend
         resend.Batch.send(batch_params)
         print(f"🚀 Batch sent to {len(recipients)} recipients from list.")
     except Exception as e:
+        # This will now give us more detail if it fails again
         print(f"❌ Resend Batch Error: {e}")
 
 if __name__ == "__main__":
